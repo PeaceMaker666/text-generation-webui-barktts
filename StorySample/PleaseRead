@@ -1,0 +1,4 @@
+Unfortunately I did not fix the code before making these recordings :c 
+The audio in these files has the issue with 's being read as  &#x27; so sometimes
+you will hear nonsensefor a moment when soemthing like "Lily's" is read.
+This is not fixed in the code however.
