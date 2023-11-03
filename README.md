@@ -3,7 +3,7 @@
 2. When you load it up for the first time you might get an error, please try to reload the extension once more.
 3. This version is currently working with Oobabooga, I will try to keep it up to date with changes to the program.
 4. Check out this commit change to see how this version is different than the other: https://github.com/RandomInternetPreson/text-generation-webui-barktts/commit/c1d64d91bb6b6ff87e00e3a0090870dcc8fe5736
-Other than working with Oobabooga it also allows one to change characters that the AI voice model receives and converts.  For example the 's would be read as &#x27 ; in the previous implementation of bark
+Other than working with Oobabooga it also allows one to change characters that the AI voice model receives and converts.  For example 's would be read as &#x27 ; in the previous implementation of bark
 
 This is an audio sample from a short story an AI wrote using Oobabooga's textgen-webui
 
