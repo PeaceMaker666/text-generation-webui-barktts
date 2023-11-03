@@ -6,10 +6,8 @@
 Other than working with Oobabooga it also allows one to change characters that the AI voice model converts.  For example the 's would be read as &#x27 ; in previous implementations of bark
 
 This is an audio sample from a short story an AI in oobabooga wrote
-<audio controls>
-  <source src="text-generation-webui-barktts/StorySampleStart/1698812202.wav" type="audio/wav">
-  Your browser does not support the audio element.
-</audio>
+
+https://github.com/RandomInternetPreson/text-generation-webui-barktts/assets/6488699/98df51e5-aa51-49ad-a055-b2aa18535f4a
 
 # text-generation-webui-barktts
 A simple extension for the [text-generation-webui by oobabooga](https://github.com/oobabooga/text-generation-webui) that uses [Bark](https://github.com/suno-ai/bark) for audio output.
@@ -39,3 +37,6 @@ USE_SMALL_MODELS=true
 # Whether to use CPU
 USE_CPU=true
 ```
+
+
+
