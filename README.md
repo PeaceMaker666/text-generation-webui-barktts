@@ -9,6 +9,10 @@ This is an audio sample from a short story an AI in oobabooga wrote
 
 https://github.com/RandomInternetPreson/text-generation-webui-barktts/assets/6488699/98df51e5-aa51-49ad-a055-b2aa18535f4a
 
+These are the settings used to produce the sample and story.
+
+![Settings](https://github.com/RandomInternetPreson/text-generation-webui-barktts/assets/6488699/a5cbb3cf-ed92-4ad2-a044-c15fd2842128)
+
 # text-generation-webui-barktts
 A simple extension for the [text-generation-webui by oobabooga](https://github.com/oobabooga/text-generation-webui) that uses [Bark](https://github.com/suno-ai/bark) for audio output.
 
