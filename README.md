@@ -7,7 +7,7 @@ Other than working with Oobabooga it also allows one to change characters that t
 
 This is an audio sample from a short story an AI in oobabooga wrote
 <audio controls>
-  <source src="https://github.com/RandomInternetPreson/text-generation-webui-barktts/blob/main/StorySampleStart/1698812202.wav" type="audio/wav">
+  <source src="StorySampleStart/1698812202.wav" type="audio/wav">
   Your browser does not support the audio element.
 </audio>
 
