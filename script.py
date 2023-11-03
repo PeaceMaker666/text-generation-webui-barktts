@@ -16,6 +16,7 @@ load_dotenv()
 # Should change this environment variable before import bark
 model_path = Path(os.environ.get('MODEL_PATH', 'extensions/bark_tts/models/'))
 os.environ['XDG_CACHE_HOME'] = model_path.resolve().as_posix()
+from modules import chat, shared
 
 import nltk
 import gradio as gr
@@ -80,6 +81,17 @@ def manual_model_preload():
         codec_use_gpu= not params['use_cpu']
     )
 
+# Remove autoplay from the last reply
+def history_modifier(history):
+    if len(history['internal']) > 0:
+        history['visible'][-1] = [
+            history['visible'][-1][0],
+            history['visible'][-1][1].replace(
+                'controls autoplay>', 'controls>')
+        ]
+
+    return history
+
 def input_modifier(string):
     if not params['activate']:
         shared.processing_message = "*Is typing...*"
@@ -89,7 +101,7 @@ def input_modifier(string):
     return string
     
 def output_modifier(string):
-        
+    string = string.replace("&#x27;", "'")       
     if not params['activate']:
         return string
     
@@ -115,12 +127,12 @@ def output_modifier(string):
         pieces += [audio_array, silence.copy()]
     audio = np.array(np.concatenate(pieces), dtype="float32")
     time_label = int(time.time())
-    write_wav(f"extensions/bark_tts/generated/{shared.character}_{time_label}.wav", params['sample_rate'], audio)
+    write_wav(f"extensions/bark_tts/generated/{time_label}.wav", params['sample_rate'], audio)
     autoplay = 'autoplay' if params['autoplay'] else ''
     if params['show_text']:
-        string = f'<audio src="file/extensions/bark_tts/generated/{shared.character}_{time_label}.wav" controls {autoplay}></audio><br>{ttstext}'
+        string = f'<audio src="file/extensions/bark_tts/generated/{time_label}.wav" controls {autoplay}></audio><br>{ttstext}'
     else:
-        string = f'<audio src="file/extensions/bark_tts/generated/{shared.character}_{time_label}.wav" controls {autoplay}></audio>'
+        string = f'<audio src="file/extensions/bark_tts/generated/{time_label}.wav" controls {autoplay}></audio>'
     
     shared.args.no_stream = streaming_state
     return string
