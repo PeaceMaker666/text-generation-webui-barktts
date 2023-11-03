@@ -1,3 +1,10 @@
+# Please read and follow these instructions
+1. When you clone or install this via the Oobabooga UI please rename the extension (located in the extensions folder) from "text-generation-webui-barktts" to "bark_tts"
+2. When you load it up for the first time you might get an error, please try to reload the extension once more.
+3. This version is currently working with Oobabooga, I will try to keep it up to date with changes to the program.
+4. Check out this commit change to see how this version is different than the others: https://github.com/RandomInternetPreson/text-generation-webui-barktts/commit/c1d64d91bb6b6ff87e00e3a0090870dcc8fe5736
+Other than working with Oobabooga it also allows one to change characters that the AI voice model converts.  For example the 's would be read as &#x27 ; in previous implementations of bark 
+
 # text-generation-webui-barktts
 A simple extension for the [text-generation-webui by oobabooga](https://github.com/oobabooga/text-generation-webui) that uses [Bark](https://github.com/suno-ai/bark) for audio output.
 
