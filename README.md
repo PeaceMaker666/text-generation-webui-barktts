@@ -17,7 +17,7 @@ These are the settings used to produce the sample and story.
 A simple extension for the [text-generation-webui by oobabooga](https://github.com/oobabooga/text-generation-webui) that uses [Bark](https://github.com/suno-ai/bark) for audio output.
 
 ## How to install - via Windows and Oobabooga UI
-1. With Oobabooga's textgen_webui installed go to the "Sessions" tab and paste https://github.com/RandomInternetPreson/text-generation-webui-barktts into the "Install or update an extension" window, very importantly press "Enter" after entering and the UI will clone this repo
+1. With Oobabooga's textgen_webui installed go to the "Session" tab and paste https://github.com/RandomInternetPreson/text-generation-webui-barktts into the "Install or update an extension" window, very importantly press "Enter" after entering and the UI will clone this repo
 
 ![clone](https://github.com/RandomInternetPreson/text-generation-webui-barktts/assets/6488699/68f0db12-4c2e-4154-a5f5-04965bd447d3)
 
