@@ -28,6 +28,7 @@ A simple extension for the [text-generation-webui by oobabooga](https://github.c
 3. In the text-generation-webui-main folder, click on "cmd_windows.bat" and navigate to the directory for this extension using the phrassing below with cd before the folder directory:
 
    cd L:\OobTesting\text-generation-webui-main\extensions\bark_tts
+   
    and press "Enter"
 
 5. Now enter this "pip install -r requirements.txt" in the command prompt and press "Enter", this will install all the stuff needed to get this running.
