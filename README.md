@@ -28,6 +28,8 @@ A simple extension for the [text-generation-webui by oobabooga](https://github.c
 3. In the text-generation-webui-main folder, click on "cmd_windows.bat" and navigate to the directory for this extension using the phrassing below with cd before the folder directory:
 
    cd L:\OobTesting\text-generation-webui-main\extensions\bark_tts
+   You would use your own directory mine is just an example
+   `cd your-directory-here`
    
    and press "Enter"
 
