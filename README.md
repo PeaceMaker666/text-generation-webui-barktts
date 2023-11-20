@@ -39,6 +39,9 @@ A simple extension for the [text-generation-webui by oobabooga](https://github.c
 
 6. Once complete you can close the command prompt window and start the textgen-webui again.  Please note that you may get an error when you load the extension for the first time, please restart textgen-webui and load again.  It's some issue with downloading the models for the first time.
 
+This is a video of how to install a different extension, but it is the same set of steps, just don't do "pip install TTS --no-dependencies"
+
+https://github.com/RandomInternetPreson/text-generation-webui-barktts/assets/6488699/400a2da6-b103-4953-b408-2f196a72234b
 
 ## How to install - via Conda Enviroment
 Assuming you already have the webui set up:
